@@ -88,9 +88,9 @@ class _InputPageState extends State<InputPage> {
                   colour: selectedGender == Gender.male
                       ? kActiveCardColour
                       : kInactiveCardColour,
-                  cardChild: IconContent(
-                    icon: FontAwesomeIcons.male,
-                    label: 'Male',
+                  cardChild: CircleAvatar(
+                    radius: 80.0,
+                    backgroundImage: AssetImage('assets/male-user.png'),
                   ),
                 )),
                 Expanded(
@@ -103,9 +103,9 @@ class _InputPageState extends State<InputPage> {
                   colour: selectedGender == Gender.female
                       ? kActiveCardColour
                       : kInactiveCardColour,
-                  cardChild: IconContent(
-                    icon: FontAwesomeIcons.female,
-                    label: 'Female',
+                  cardChild: CircleAvatar(
+                    radius: 80.0,
+                    backgroundImage: AssetImage('assets/female-user.png'),
                   ),
                 )),
               ],
